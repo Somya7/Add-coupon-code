@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>FreshLMS</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="header">
+                <h1>Add Coupon Code</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-check-inline codes">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input " name="optradio"><span>Single Coupon Code</span>
+                    </label>
+                </div>
+                <div class="col-sm-6 form-check-inline codes">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio"><span>Bulk Coupon Codes</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="form-group">
+                    <div class="input">
+                        <p>Enter Name</p>
+                        <input type="text" class="form-control" placeholder="Input Text" name="text2">
+                    </div>
+                    <div class="input">
+                        <p>Enter Coupon Code</p>
+                        <input type="text" class="form-control" placeholder="Input Text" name="text2">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Type of discount</h3>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio"><span>Percenatge
+                                discount</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio"><span>Fixed amount
+                                discount</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group discount">
+                        <input type="text" class="form-control" placeholder="Enter discount" name="text2">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-check" class='frm'>
+                        <label for=frm1 class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" id="frm1"
+                                onclick="toggle1(this)"><span>Limit the number of times the code can be redeemed</span>
+                        </label>
+                    </div>
+                    <div id="con1" style="display: none">
+                        <input type="number" min="1" max="4" id="number" placeholder="Enter Number" />
+                    </div>
+                    <div class="form-check">
+                        <label for="frm2" class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" id="frm2"
+                                onclick="toggle2(this)"><span>Add an Expiry Date</span>
+                        </label>
+                    </div>
+                    <div id="con2" style="display: none">
+                        <input type="date" id="date" placeholder="Selected Date" />
+                    </div>
+                    <div class="form-check">
+                        <label for=frm3 class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" id=frm3 onclick="toggle3(this)">
+                            <span>Limit to specific courses </span>
+                        </label>
+                    </div>
+                    <div id="con3" style="display: none">
+                        <input type="text" id="courses" placeholder="Input Text" />
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="footer">
+                <button type="button" class="btn btn-outline-dark">Cancel</button>
+
+                <button type="button" class="btn btn-primary active">Save</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
